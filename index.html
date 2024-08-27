@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Uma Surpresa Especial de Aniversário para Você, Bia! 🎉</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="Clique aqui para descobrir uma surpresa de aniversário que preparei com muito carinho. Não perca este momento especial! 🎂✨">
+
+    <!-- Meta Tags Open Graph para WhatsApp e redes sociais -->
+    <meta property="og:title" content="🎉 Uma Surpresa Especial de Aniversário para Você, Bia! 🎉">
+    <meta property="og:description" content="Clique aqui para descobrir uma surpresa de aniversário que preparei com muito carinho. Não perca este momento especial! 🎂✨">
+    <meta property="og:image" content="URL-da-imagem-para-o-Open-Graph">
+    <meta property="og:url" content="URL-do-seu-cartão">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="card">
+        <span id="openButton">🎉 Clique aqui para abrir seu cartão. 🎂</span>
+
+        <div class="content" id="content">
+            <h1>Feliz Aniversário! 🎉</h1>
+
+            <p>Querida Bia,</p>
+            <p>Hoje é um dia especial para uma pessoa incrível que eu tenho a sorte de ver crescer desde pequenininha.
+                🎂</p>
+
+            <p>🍓
+                Feliz 19º aniversário! Que seu dia seja cheio de alegrias, conquistas e momentos inesquecíveis. Você é
+                uma pessoa maravilhosa e merece todas as coisas boas que a vida tem a oferecer.</p>
+
+            <p> Espero que este ano seja ainda mais brilhante e repleto de realizações. Continue sendo essa luz que
+                ilumina a vida de todos ao seu redor. ✨</p>
+
+
+
+            <div class="photo">
+                <img src="./assets/bia.jfif" alt="Foto atual">
+            </div>
+            <p>Com muito amor, ❤️</p>
+            <p>Matheus</p>
+        </div>
+    </div>
+
+    <audio id="birthdaySong" loop>
+        <source src="./assets/videoplayback.m4a" type="audio/mp4">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+
+    <script>
+        var button = document.getElementById('openButton');
+        var content = document.getElementById('content');
+        var audio = document.getElementById('birthdaySong');
+
+        button.addEventListener('click', () => {
+            button.style = "display:none";
+            content.style = "display:block";
+
+
+            // Iniciar a reprodução da música
+            audio.play().catch(function () {
+                console.log('A reprodução automática foi bloqueada pelo navegador.');
+            });
+        })
+
+
+
+    </script>
+</body>
+
+</html>
